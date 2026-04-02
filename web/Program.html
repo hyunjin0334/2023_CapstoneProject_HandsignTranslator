@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>PsyBer</title>
+
+	<style>
+	#menubar { background:FFFFFF; }
+	#menubar ul { margin:15px 15%; padding:10px; width:70%; }
+	#menubar ul li { display:inline-block; padding:0px 60px; }
+	#menubar ul li a { font-size:17px; color:black; text-decoration:none; }
+	#menubar ul li a:hover { color:gray; }
+	span { font-size:30px; }
+
+	.box1 { margin-left:19%;
+		margin-top:100px;
+		width:58%;
+		height:450px;
+		padding-left:2%;
+		padding-top:2%;
+		font-size:23px;
+		border:1px solid black; }
+
+	.box1 img { width:92%;
+		    height:50%;
+		    margin-left:3%; }
+
+
+	.function1 { margin-top:100px; margin-left:15%; font-size:40px; width:31%; }
+
+	.function1box { margin:20px 16%;
+			height:400px;
+			border:1px solid black;
+			display:block; }
+
+	.function1box img { margin-left:2%;
+			    height:100%;
+			    display:inline-block;
+			    vertical-align:top;}
+
+	.function1text { margin-left:1%;
+			 margin-top:40px;
+			 width: 52%;
+			 height:360px;
+			 display:inline-block;
+			 vertical-align:top;
+			 font-size:23px;}
+
+
+	.function2 { margin-top:200px; margin-left:54%; font-size:40px; width:31%; text-align:right; }
+
+	.function2box { margin:20px 16%;
+			height:400px;
+			border:1px solid black;
+			display:block; }
+
+	.function2box img { margin-left:1%;
+			    height:100%;
+			    display:inline-block;
+			    vertical-align:top;}
+
+	.function2text { margin-left:2%;
+			 margin-top:57px;
+			 width: 52%;
+			 height:360px;
+			 display:inline-block;
+			 vertical-align:top;
+			 font-size:23px;}
+
+	</style>
+</head>
+
+
+<body>
+	<nav id="menubar">
+		<ul>
+			<li><a href="file:///C:/Users/User/Desktop/web/PsyBer.html"><span><strong>PsyBer</strong></span></a></li>
+			<li><a href="file:///C:/Users/User/Desktop/web/Team.html">Team</a></li>
+			<li><a href="file:///C:/Users/User/Desktop/web/About.html">About</a></li>
+			<li><a href="file:///C:/Users/User/Desktop/web/Program.html">Program</a></li>
+			<li><a href="file:///C:/Users/User/Desktop/web/Start.html">Start</a></li>
+			<li><a href="https://www.duksung.ac.kr/cybersec/main.do"><span><strong>Cyber Security</strong></span></a></li>
+		</ul>
+	</nav><hr>
+	
+	<div class="box1"> 개발 도구&nbsp;&nbsp;|&nbsp;&nbsp;LSTM model, Transformer model, STT, MedaiPipe Holistic, Jupyter, Visual Studio code<br><br>
+			   개발 언어&nbsp;&nbsp;|&nbsp;&nbsp;Python, Html<br><br>
+			   개발 장비&nbsp;&nbsp;|&nbsp;&nbsp;앱코 QHD 웹캠 APC930U, 마이크, 모니터<br><br>
+			<img src="system.png" alt="시스템 구조도">
+	</div><hr style="margin:120px 12%;">
+
+	<p style="margin-top:110px; text-align:center; font-size:30px;"><strong>function</strong></p>	
+
+	<div class="function1"><strong><ins>#function 1. 수어 → 한국어로</ins></strong></div>
+	<div class="function1box">
+		<img src="function1.png" alt="첫 번째 기능">
+		<div class="function1text"> 이 기능은 사용자가 수어를 하면, 그에 맞는 한국어로 번역해주는 기능입니다.<br><br>
+		사용자가 웹캠 앞에서 수어 → MediaPipe Holistic을 통해 실시간으로 인식된 Landmark의 패턴을 기존 학습된 데이터와 비교 → 가장 정확률이 높은 결과값을 화면에 출력<br><br>
+		저희는 이 과정에서 LSTM model과 Transformer model를 모두 학습시켜보았으며 그 결과, 전반적으로 성능이 더 좋은 Transformer을 전시에 사용해보았습니다.</div>
+	</div>
+
+	<div class="function2"><strong><ins>#function 2. 한국어 → 수어로</ins></strong></div>
+	<div class="function2box">
+		<div class="function2text"> 이 기능은 사용자가 한국어를 말하면, 그에 맞는 수어 영상을 띄워주는 기능입니다.<br><br>
+		저희는 사전에 수어 영상과 그 의미를 가진 텍스트를 매칭해<br>놓았습니다.<br><br>
+		사용자가 마이크에 한국어 → STT 프로그램을 통해 사용자의 음성 인식→ 음성인식 결과를 기반으로 해당 텍스트에 맞는 수어 영상이 화면에 출력<br><br></div>
+		<img src="function2.png" alt="두 번째 기능">
+	</div>
+
+	<div style="height:250px;"></div>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+opencv-python
+mediapipe
+numpy
+tensorflow
+keras
+speechrecognition
+scikit-learn
+pyqt5
